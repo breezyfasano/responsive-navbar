@@ -16,6 +16,9 @@ $screen-lg-min: 1200px;
         max-width: 100%;
         min-height: 100px;
         
+        a {
+            padding: 1vh 3vw 1vh 6vw;
+        }
         
         ul {
             display: inline-flex; 
@@ -27,21 +30,31 @@ $screen-lg-min: 1200px;
     }
 
     main {
-        padding: 3vw 0 0 3vw;
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    .jumbotron {
+        width: 80%;
+        margin: 0 auto 0 auto;
     }
 
     .intro-header {
-        font-size: 7vw;
-        margin-top: 3vh;
+        font-size: 6vw;
+        margin:0;
+        line-height: 8vw;
     }
 
     .intro-description {
-    font-size: 5vw;
-    padding: 7vh 0 4vh 0;
+    font-size: 4vw;
+    padding: 1vh 0 4vh 0;
+    line-height: 6vw;
     }
 
     button {
-        width: 15vw;
-        font-size: 100%;
+        display: block;
+        width: 20vw;
+        font-size: 2vw;
+        margin: 0 auto 5vh auto;
     }
 }

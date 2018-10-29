@@ -2,6 +2,7 @@
 const navbar = document.getElementById('nav');
 const openIcon = document.querySelector('.open-icon');
 const closeIcon = document.querySelector('.close-icon');
+const button = document.querySelector('button');
 
 const openNav = () => {
     let navbarChildren = navbar.children;
@@ -32,3 +33,10 @@ openIcon.addEventListener ('click',
          closeNav();
      }
  );
+
+ 
+  button.addEventListener('click',
+      function () {
+          location.href = 'https://github.com/breezyfasano/responsive-navbar';
+      }
+  );

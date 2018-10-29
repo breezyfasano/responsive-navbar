@@ -55,7 +55,7 @@ nav {
     text-decoration: none;
     font-size: 25px;
     display: block;
-    padding: 1vh 3vw 1vh 6vw;
+    padding: 3vh 3vw 1vh 6vw;
     transition: .3s; }
   nav .close-icon {
     position: relative;
@@ -94,15 +94,15 @@ button {
   background: transparent;
   border: 10px solid #1d2786;
   border-radius: 10px;
-  margin: 0 auto 0 auto; }
+  color: #1d2786; }
   button a {
     text-decoration: none;
     color: #1d2786; }
   button:hover {
-    background: #6a65d8;
     border-color: white;
     transition: .3s;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
 
 @media (min-width: 1200px) {
   .close-icon,
@@ -115,18 +115,28 @@ button {
     width: 100%;
     max-width: 100%;
     min-height: 100px; }
+    nav a {
+      padding: 1vh 3vw 1vh 6vw; }
     nav ul {
       display: inline-flex; }
     nav a:hover {
       text-decoration: line-through; }
   main {
-    padding: 3vw 0 0 3vw; }
+    margin-top: 5vh;
+    width: 100%; }
+  .jumbotron {
+    width: 80%;
+    margin: 0 auto 0 auto; }
   .intro-header {
-    font-size: 7vw;
-    margin-top: 3vh; }
+    font-size: 6vw;
+    margin: 0;
+    line-height: 8vw; }
   .intro-description {
-    font-size: 5vw;
-    padding: 7vh 0 4vh 0; }
+    font-size: 4vw;
+    padding: 1vh 0 4vh 0;
+    line-height: 6vw; }
   button {
-    width: 15vw;
-    font-size: 100%; } }
+    display: block;
+    width: 20vw;
+    font-size: 2vw;
+    margin: 0 auto 5vh auto; } }
