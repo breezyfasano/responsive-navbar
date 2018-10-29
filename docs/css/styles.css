@@ -1,4 +1,5 @@
 /*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css?family=Karla|Rubik:400,500");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -34,54 +35,98 @@ td, th {
   padding: 0;
   text-align: left; }
 
+body {
+  background: #ffe6eb; }
+
 nav {
   height: 100%;
   width: 0;
+  max-width: 250px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
   overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; }
+  transition: 0.8s;
+  background-color: #ffcdcd; }
   nav a {
-    padding: 8px 8px 8px 32px;
+    color: #1d2786;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
-    transition: 0.3s; }
+    padding: 1vh 3vw 1vh 6vw;
+    transition: .3s; }
   nav .close-icon {
-    position: absolute;
+    position: relative;
     top: 0;
-    right: 25px;
+    left: 100px;
     font-size: 36px;
     margin-left: 50px; }
 
 main {
-  transition: margin-left .5s;
   padding: 20px; }
 
-/* .nav-links {
-    .close-icon {
-        color: black;
-        text-decoration: none;
-    }
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.open-icon {
+  fill: #1d2786;
+  border: 2px solid #1d2786;
+  border-radius: 3px;
+  padding: 2px; }
 
-    ul {
-         display: flex;
-         flex-direction: column;
-         font-size: 5vw;
-    }
+.intro-header {
+  font-family: 'Rubik', sans-serif;
+  font-size: 11vw;
+  font-weight: bold;
+  color: #6a65d8;
+  margin-top: 6vh; }
 
-    li a{
-         padding: 8px 8px 8px 32px;
-         text-decoration: none;
-         font-size: 25px;
-         display: block;
-         transition: 0.3s;
-    }
-}; */
+.intro-description {
+  font-family: 'Karla', sans-serif;
+  font-size: 8vw;
+  padding: 4vh 0 4vh 0;
+  color: #1d2786; }
+
+button {
+  font-family: 'Karla', sans-serif;
+  width: 100%;
+  font-size: 7vw;
+  padding: 2vh;
+  background: transparent;
+  border: 10px solid #1d2786;
+  border-radius: 10px;
+  margin: 0 auto 0 auto; }
+  button a {
+    text-decoration: none;
+    color: #1d2786; }
+  button:hover {
+    background: #6a65d8;
+    border-color: white;
+    transition: .3s;
+    color: #fff; }
+
+@media (min-width: 1200px) {
+  .close-icon,
+  .open-icon {
+    display: none; }
+  nav {
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100px; }
+    nav ul {
+      display: inline-flex; }
+    nav a:hover {
+      text-decoration: line-through; }
+  main {
+    padding: 3vw 0 0 3vw; }
+  .intro-header {
+    font-size: 7vw;
+    margin-top: 3vh; }
+  .intro-description {
+    font-size: 5vw;
+    padding: 7vh 0 4vh 0; }
+  button {
+    width: 15vw;
+    font-size: 100%; } }

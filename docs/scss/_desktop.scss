@@ -1,0 +1,47 @@
+// desktop view css
+
+$screen-lg-min: 1200px;
+
+@media (min-width: $screen-lg-min) {
+    .close-icon,
+    .open-icon {
+        display: none;
+    }
+
+    nav {
+        position: static;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        
+        
+        ul {
+            display: inline-flex; 
+        }
+
+        a:hover {
+            text-decoration: line-through;
+        }
+    }
+
+    main {
+        padding: 3vw 0 0 3vw;
+    }
+
+    .intro-header {
+        font-size: 7vw;
+        margin-top: 3vh;
+    }
+
+    .intro-description {
+    font-size: 5vw;
+    padding: 7vh 0 4vh 0;
+    }
+
+    button {
+        width: 15vw;
+        font-size: 100%;
+    }
+}
